@@ -1,0 +1,7 @@
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 600px;
+    min-height: 600px;
+}
