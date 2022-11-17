@@ -1,0 +1,128 @@
+<head>
+    <title> MedSphere </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<table border="0" width="100%" cellspacing="0" bgcolor="#673de6">
+    <tr>
+        <td>
+            <table border="0" width="85%" align="center" cellpadding="15">
+                <tr>
+                    <td>
+                        <font face="Open Sans" size="5" color="black"> <b> MedSphere </b></font>
+                    </td>
+
+                    <td width="20%"></td>
+                    <td>
+                        <a href="C:\Users\Joel John Joseph\Desktop\TRIMESTER 2\WSD\LAB\index.html">
+                            <font color="#fff">Home </font>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <font color="#fff">Services </font>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <font color="#fff">Department </font>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="C:\Users\Joel John Joseph\Desktop\TRIMESTER 2\WSD\Template\medion\about.html ">
+                            <font color="#fff">About </font>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="contact.html">
+                            <font color="#fff">Contact Us </font>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="survey.html">
+                            <font color="#fff">Survey </font>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<h1 id="title">A Survey for the Website</h1>
+
+
+<div id="foreground">
+    <p id="description"> Hello! We're trying to find out what current and future developers want most. <br><br>If you'd like to contribute, please fill the form below:</p><br>
+
+    <!-- The form starts here -->
+    <form id="survey-form">
+        <!-- First, the use of radio buttons, customized with CSS -->
+        <div class="labels"><label id="gender-label" for="gender">I am:</label></div>
+        <!--male-->
+        <div class="rightside">
+            <label for="gender" class="container"><i class="fa fa2 fa-mars">&nbsp;</i>Male
+  <input id="gender" type="radio" name="gender" value="male" checked>
+  <span class="checkmarkm"></span><br></label>
+
+            <label class="container"><i class="fa fa2 fa-venus">&nbsp;</i>Female
+  <input id="gender" type="radio" name="gender" value="female">
+  <span class="checkmarkf"><br></span>
+
+        
+
+  
+</label>
+        </div>
+        <div class="labels">
+            <label id="name-label" for="name"><font color="red">*</font> My Name is: </label>
+        </div>
+        <div class="rightside">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="First name or Nickname" required>
+        </div>
+        <div class="labels">
+            <label id="email-label" for="email"><font color="red">*</font> My Email is: </label>
+        </div>
+        <div class="rightside">
+            <input type="email" name="email" id="email" class="input-field" required placeholder="something@domain.com">
+        </div>
+
+        <div class="labels">
+            <label id="number-label" for="number"><font color="red">*</font> My Age is: </label>
+        </div>
+        <div class="rightside">
+            <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age (in numbers)">
+        </div>
+        <div class="labels">
+            <label for="currentPos">How is the website ?</label>
+        </div>
+        <div class="rightside">
+            <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled selected value>Pick one</option>
+      <option value="Excellent">Excellent</option>
+      <option value="Good">Good</option>
+      <option value="Average">Average</option>
+      <option value="Worst">Worst</option>
+      <option value="Others">Others</option>
+    </select>
+        </div>
+        <div class="labels">
+            <label for="preferences">Which service did you face any issue? </label>
+        </div>
+        <div class="rightside">
+            <ul id="preferences" style="list-style: none;">
+                <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Nav Bar</label></li>
+                <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Loading of website</label></li>
+                <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Color Contrast</label></li>
+            </ul>
+        </div>
+        <div class="labels">
+            <label for="comments">Optional message:</label>
+        </div>
+        <div class="rightside">
+            <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Your valuable opinion"></textarea>
+        </div>
+        <center>
+            <font color="red">*</font>: Required</center><br>
+        <!--added font-awesome CSS using Codepen settings-->
+        <button id="submit" type="submit"><i class="fa fa-paper-plane"></i>&nbsp;Contribute</button>
+    </form>
+</div>
