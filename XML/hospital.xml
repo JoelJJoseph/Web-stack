@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl "href="hospital.xsl"?>
+ <Doctor>
+  <s>
+   <name> Divyank Singh Sikarwar </name>
+   <age>18</age>
+   <Department> Neurology</Department>
+   <yearsexp>2</yearsexp>
+   <Specialization>Paediatric</Specialization>
+   <salary>50000</salary>
+   <charge>500</charge>
+   <city> Agra </city>
+  </s>
+  <s>
+   <name> Aniket Chauhan </name>
+   <age>30</age>
+   <Department> Ent</Department>
+   <yearsexp>9</yearsexp>
+   <Specialization>adult</Specialization>
+   <salary>40000</salary>
+   <charge>400</charge>
+   <city> Shahjahanpur </city>
+  </s>
+  <s> 
+   <name> Simran Agarwal</name>
+   <age>27</age>
+   <Department> Neurology</Department>
+   <yearsexp>8</yearsexp>
+   <Specialization>Paediatric</Specialization>
+   <salary>50000</salary>
+   <charge>900</charge>
+   <city> Buland Shar</city>
+  </s>
+  <s> 
+   <name> Abhay Chauhan</name>
+   <age>45</age>
+   <Department> Cardiology</Department>
+   <yearsexp>15</yearsexp>
+   <Specialization>adult</Specialization>
+   <salary>300000</salary>
+   <charge>700</charge>
+   <city> Shahjahanpur</city>
+  </s>
+  <s> 
+   <name> Himanshu Bhatia</name>
+   <age>30</age>
+   <Department> Physiotherapy</Department>
+   <yearsexp>6</yearsexp>
+   <Specialization>adult</Specialization>
+   <salary>200000</salary>
+   <charge>200</charge>
+   <city> Indore</city>
+  </s>
+ </Doctor>
