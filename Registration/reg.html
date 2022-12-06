@@ -1,0 +1,40 @@
+<link rel="stylesheet" type='text/css' href="C:\Users\Joel John Joseph\Desktop\TRIMESTER 2\WSD\LAB\Registration\style.css">
+
+<link rel="script" type='text/js' href="C:\Users\Joel John Joseph\Desktop\TRIMESTER 2\WSD\LAB\Registration\vali.js">
+
+<body>
+    <h1>Registration form</h1>
+    <div class="form-container ">
+        <form name="registerForm ">
+            <label for="firstName ">First Name *</label>
+            <input type="text " id="firstName " name="firstName " placeholder="John " required/>
+            <p class="error-message "></p>
+            <label for="lastName ">Last Name *</label>
+            <input type="text " id="lastName " placeholder="Doe " required/>
+            <p class="error-message "></p>
+            <label for="e-mail ">E-mail address *</label>
+            <input type="text " id="e-mail " placeholder="john-doe@net.com " required/>
+            <p class="error-message "></p>
+            <label for="phoneNumber ">Phone Number</label>
+            <input type="text " id="phoneNumber " maxlength="10 " pattern=".{9,} " required title="10 characters length " placeholder="2235879721 " />
+            <p class="error-message "></p>
+            <label for="country ">Country</label>
+            <input type="text " id="country " placeholder="United Kingdom " />
+            <p class="error-message "></p>
+            <label for="password ">Password *</label>
+            <input type="password " id="password " pattern=".{8,} " required title="8 characters minimum " />
+            <p class="error-message "></p>
+            <p class="password-rules ">Your password should contain at least 8 characters and 1 number.</p>
+            <div class="radio-question ">
+                <p>Where did you find out about us?</p>
+                <form>
+                    <input class="radio-input" type="radio" name="media" value="TV " /> TV <br>
+                    <input class="radio-input" type="radio" name="media" value="radio " /> Radio <br>
+                    <input class="radio-input" type="radio" name="media" value="internet " /> Internet <br>
+                    <input class="radio-input" type="radio" name="media" value="newspaper " /> Newspaper <br>
+                    <input class="radio-input" type="radio" name="media" value="recommend " /> Recommendation <br>
+            </div>
+            <input class="button " type="submit " value="submit " name="submit " onClick="formValidation() " />
+            </form>
+    </div>
+</body>
