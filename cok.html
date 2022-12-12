@@ -1,0 +1,54 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+         <!--
+            function WriteCookie() {
+               var now = new Date();
+               now.setMonth( now.getMonth() - 1 );
+               cookievalue1 = escape(document.myform.customer.value) + ";"
+               cookievalue2 = escape(document.myform.age.value) + ";"
+               
+               document.cookie = "name=" + cookievalue1;
+               document.cookie = "expires=" + now.toUTCString() + ";"
+               document.cookie = "age=" + cookievalue2;
+               document.cookie = "expires=" + now.toUTCString() + ";"
+               document.write ("\nSetting Cookies : " + "name=" + cookievalue1 + "expires=" + now.toUTCString());
+               document.write ("\nSetting Cookies : " + "age=" + cookievalue2 );
+            }
+         //-->
+         function ReadCookie() {
+               var allcookies = document.cookie;
+               document.write ("All Cookies : " + allcookies );
+               
+               // Get all the cookies pairs in an array
+               cookiearray = allcookies.split(';');
+               
+               // Now take key value pair out of this array
+               for(var i=0; i<cookiearray.length; i++) {
+                  name = cookiearray[i].split('=')[0];
+                  value = cookiearray[i].split('=')[1];
+                  document.write ("\nKey is : " + name + " and Value is : " + value);
+               }
+            }
+          function deleteCookie()  
+          {  
+              document.cookie=cookievalue1+";max-age=0"; 
+              cookievalue1=document.cookie;  
+              document.cookie=cookievalue2+";max-age=0"; 
+              cookievalue2=document.cookie;
+            alert("Cookies is deleted");  
+          }  
+      </script>      
+   </head>
+   
+   <body>
+      <form name = "myform" action = "">
+         Enter name: <input type = "text" name = "customer"/><br>
+         Enter age: <input type = 'number' name="age"/><br><br>
+          
+         <input type = "button" value = "Set Cookie" onclick = "WriteCookie()"/><br><br>
+         <input type = "button" value = "Show Cookies" onclick = "ReadCookie()"/><br><br>
+
+      </form>      
+   </body>
+</html> 
