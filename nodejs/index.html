@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Details</title>
+    <link rel="stylesheet" href="sstyle.css">
+</head>
+
+<body>
+    <table border="0" width="100%" cellspacing="0" bgcolor="#673de6">
+        <tr>
+            <td>
+                <table border="0" width="85%" align="center" cellpadding="15">
+                    <tr>
+                        <td>
+                            <font face="Open Sans" size="5" color="black"> <b> MedSphere </b></font>
+                        </td>
+
+                        <td width="20%"></td>
+                        <td>
+
+                            <a href="Registration\index.html">
+                                <font color="#fff">Registration </font>
+                            </a>
+                        </td>
+                        <td>
+
+                            <a href="index.html">
+                                <font color="#fff">Home </font>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <font color="#fff">Services </font>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://127.0.0.1:5501/Angular-Json/employeeangular.html">
+                                <font color="#fff ">Department </font>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="C:\Users\Joel John Joseph\Desktop\TRIMESTER 2\WSD\Template\medion\about.html ">
+                                <font color="#fff ">About </font>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="contact.html ">
+                                <font color="#fff ">Contact Us </font>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="survey/survey.html ">
+                                <font color="#fff ">Survey </font>
+                            </a>
+                    </tr>
+                </table>
+                </td>
+        </tr>
+    </table>
+
+
+    <div class="cards-list">
+
+        <div class="card 1">
+            <div class="card_image"> <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1lZGljYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" /> </div>
+            <div class="card_title title-white">
+                <a href="./View">View Doctor JSON File</a><br>
+            </div>
+        </div>
+
+        <div class="card 2">
+            <div class="card_image">
+                <img src="https://images.unsplash.com/photo-1666214280250-41f16ba24a26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8bWVkaWNhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+            </div>
+            <div class="card_title title-white">
+                <a href="./AddDoctor">Add Doctor Table</a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+<style>
+    .cards-list {
+        z-index: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        margin: 30px auto;
+        width: 300px;
+        height: 300px;
+        border-radius: 40px;
+        box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    
+    .card .card_image {
+        width: inherit;
+        height: inherit;
+        border-radius: 40px;
+    }
+    
+    .card .card_image img {
+        width: inherit;
+        height: inherit;
+        border-radius: 40px;
+        object-fit: cover;
+    }
+    
+    .card .card_title {
+        text-align: center;
+        border-radius: 0px 0px 40px 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: -80px;
+        height: 40px;
+    }
+    
+    .card:hover {
+        transform: scale(0.9, 0.9);
+        box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+    }
+    
+    .title-white {
+        color: white;
+    }
+    
+    .title-black {
+        color: black;
+    }
+    
+    @media all and (max-width: 500px) {
+        .card-list {
+            /* On small screens, we are no longer using row direction but column */
+            flex-direction: column;
+        }
+    }
+    /*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+*/
+</style>
+
+</html>
